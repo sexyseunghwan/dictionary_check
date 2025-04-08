@@ -22,7 +22,7 @@ impl FileIOService for FileIOServicePub {
 
         /* 2. 파일 생성&열기(쓰기) */
         let mut write_file_path: PathBuf = PathBuf::from(RESULT_PATH.to_string());
-        write_file_path.push(dictionary.dictionary_name());
+        write_file_path.push(dictionary.result_name());
 
         let mut write_file: File = File::create(&write_file_path)
             .map_err(|err| anyhow!("[Error][process_file()] Failed to create file: {}", err))?;

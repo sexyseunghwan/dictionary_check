@@ -6,4 +6,5 @@ use crate::common::*;
 pub struct SearchDictionary {
     pub dictionary_name: String,
     pub dictionary_path: String,
+    pub result_name: String
 }

@@ -2,10 +2,10 @@ use crate::common::*;
 
 #[doc = "Function responsible for logging"]
 pub fn set_global_logger() {
-    let log_directory: &str = "logs"; /* Directory to store log files */
-    let file_prefix: &str = ""; /* Prefixes for log files */
+    let log_directory = "logs"; /* Directory to store log files */
+    let file_prefix = ""; /* Prefixes for log files */
 
-    /* Logger setting */
+    // Logger setting
     Logger::try_with_str("info")
         .unwrap()
         .log_to_file(

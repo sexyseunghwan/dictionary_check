@@ -6,10 +6,9 @@ Description : 검색사전에서 중복되는 단어를 찾아내주는 프로�
 History     : 2025-04-08 Seunghwan Shin       # [v.1.0.0] first create.
 */
 mod common;
+use crate::common::*;
 
 mod utils;
-use log::info;
-
 use crate::utils::io_utils::*;
 use crate::utils::logger_utils::*;
 
@@ -29,9 +28,9 @@ use crate::models::search_dictionaries::*;
 #[tokio::main]
 async fn main() {
     
-    load_env();
+    dotenv().ok();
     set_global_logger();
-    
+
     info!("Starting the application...");
     
     let search_dictionaries: SearchDictionaries =

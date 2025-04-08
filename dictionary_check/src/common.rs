@@ -23,9 +23,9 @@ pub use anyhow::{anyhow, Result};
 pub use derive_new::new;
 pub use getset::{Getters, Setters};
 
+pub use dotenv::dotenv;
+
 
 pub use async_trait::async_trait;
-
-pub use dotenvy::from_filename;
 
 pub use once_cell::sync::Lazy as once_lazy;

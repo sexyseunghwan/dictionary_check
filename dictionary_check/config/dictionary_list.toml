@@ -1,18 +1,22 @@
 [[dictionary]]
 dictionary_name = "stopwords"
 dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\stopwords.txt"
+result_name = "result_stopwords.txt"
 
 
 [[dictionary]]
 dictionary_name = "synonyms"
 dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\synonyms.txt"
+result_name = "result_synonyms.txt"
 
 
 [[dictionary]]
 dictionary_name = "synonyms_search"
 dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\synonyms_search.txt"
+result_name = "result_synonyms_search.txt"
 
 
 [[dictionary]]
 dictionary_name = "userdic"
 dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\userdic.txt"
+result_name = "result_userdic.txt"

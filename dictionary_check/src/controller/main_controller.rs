@@ -57,11 +57,20 @@ impl<F: FileIOService, S: StdIOService> MainController<F, S> {
                             Ok(_) => {
                                 self.std_io_service
                                     .write_to_stdout("The task has been completed.");
+                                
+                                self.std_io_service
+                                    .write_to_stdout("**Press any key to exit.: ");
+                                self.std_io_service.read_to_stdin();
+                                
                                 break;
                             }
                             Err(e) => {
-                                self.std_io_service.write_to_stdout("The task failed.");
                                 error!("[Error][MainController -> main_task] {:?}", e);
+                                self.std_io_service.write_to_stdout("The task failed.");
+                                self.std_io_service
+                                    .write_to_stdout("**Press any key to exit.: ");
+                                self.std_io_service.read_to_stdin();
+
                                 break;
                             }
                         }

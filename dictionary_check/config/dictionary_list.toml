@@ -1,0 +1,18 @@
+[[dictionary]]
+dictionary_name = "stopwords"
+dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\stopwords.txt"
+
+
+[[dictionary]]
+dictionary_name = "synonyms"
+dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\synonyms.txt"
+
+
+[[dictionary]]
+dictionary_name = "synonyms_search"
+dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\synonyms_search.txt"
+
+
+[[dictionary]]
+dictionary_name = "userdic"
+dictionary_path = "C:\\Users\\user\\Desktop\\dicdicdic\\userdic.txt"
